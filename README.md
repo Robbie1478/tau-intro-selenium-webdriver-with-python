@@ -1,9 +1,12 @@
 # tau-intro-selenium-webdriver-with-python
 
+This repository contains content for the
+*Introduction to Selenium WebDriver with Python* course
+taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
+on [Test Automation University](https://testautomationu.applitools.com/).
+
 Useful URLs
 
-- [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
-- [Test Automation University](https://testautomationu.applitools.com/)
 - [Selenium WebDriver With Pyton](https://testautomationu.applitools.com/selenium-webdriver-python-tutorial/)
 - [TAU - Report](https://github.com/AndyLPK247/tau-intro-selenium-py)
 - [Beneficial To Have Followed Previously](https://testautomationu.applitools.com/python-tutorial/)
