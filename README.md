@@ -1,7 +1,16 @@
 # tau-intro-selenium-webdriver-with-python
 
+[Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
+[Test Automation University](https://testautomationu.applitools.com/)
+During the course, you will build a basic Web UI test automation solution using Python and Selenium WebDriver.
+Each chapter will add a new layer to the solution.
+Follow the instructions in this README to code the solution as you take each chapter.
+If you get stuck, refer to the example code in this repository for help.
+
 Useful URLs
 
+- [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
+- [Test Automation University](https://testautomationu.applitools.com/)
 - [Selenium WebDriver With Pyton](https://testautomationu.applitools.com/selenium-webdriver-python-tutorial/)
 - [TAU - Report](https://github.com/AndyLPK247/tau-intro-selenium-py)
 - [Beneficial To Have Followed Previously](https://testautomationu.applitools.com/python-tutorial/)
@@ -16,3 +25,7 @@ Useful URLs
 
 Create the test_search file with the content shell shown in the video and run the command `python -m pytest`.
 At this point we expect the test to fail with the exception `"Incomplete Test"`
+
+## Chapter 3 - Setting Up Selenium Web Driver
+
+[WebDriver API - Read the Docs](https://selenium-python.readthedocs.io/api.html)
