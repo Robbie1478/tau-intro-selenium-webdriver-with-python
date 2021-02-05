@@ -25,3 +25,10 @@ Each test should initialise its own WebDriver Instance and Quit the instances re
 To install Selenium run the command `pipenv install selenium` within the terminal.
 
 To make use of Fixtures we need to create a file within the `tests` folder called `conftest.py`
+
+## Chapter 4 - Defining Page Objects
+
+- Create a folder call `pages` at the root of the project creating the below within the folder
+  - Create a package called `__init__.py`
+  - Create a file call `search.py`
+  - Create a file call `result.py`
