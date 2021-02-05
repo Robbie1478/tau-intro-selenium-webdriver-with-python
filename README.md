@@ -21,7 +21,3 @@ Useful URLs
 
 Create the test_search file with the content shell shown in the video and run the command `python -m pytest`.
 At this point we expect the test to fail with the exception `"Incomplete Test"`
-
-## Chapter 3 - Setting Up Selenium Web Driver
-
-[WebDriver API - Read the Docs](https://selenium-python.readthedocs.io/api.html)
