@@ -7,6 +7,7 @@ Useful URLs
 - [Beneficial To Have Followed Previously](https://testautomationu.applitools.com/python-tutorial/)
 - [Python can be downloaded from Python.Org](https://www.python.org/downloads/)
 - [WebDriver API - Read the Docs](https://selenium-python.readthedocs.io/api.html)
+- [Waits - Implicit and Explicity](https://selenium-python.readthedocs.io/waits.html)
 
 ## Chapter 2 - Setting Up Pytest
 
@@ -64,3 +65,13 @@ def config(scope='session'):
 ```
 
 By default this will run in `Headless Chrome` due to the configuration in the `config.json` configuration file.  
+
+## Race Conditions
+
+When running in Firefox, we encountered a failed test, the test tried to check the value of the new title before it had changed - this is known as a `race condition`
+
+```bash
+# And the search result title contains "panda"
+  # (In this instance - putting this assertion last guarantees that the page title will be ready)
+  assert PHRASE in result_page.title()
+```
