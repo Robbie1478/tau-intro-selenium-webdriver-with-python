@@ -32,3 +32,35 @@ To make use of Fixtures we need to create a file within the `tests` folder calle
   - Create a package called `__init__.py`
   - Create a file call `search.py`
   - Create a file call `result.py`
+
+## Chapter 7 - Confifuring Multiple Browsers
+
+Adding a configuration file at the root of the project, currently it has 2 values
+
+```bash
+{
+    "browser": "Headless Chrome",
+    "implicit_wait": 10
+}
+```
+
+To enable our tests to read the config file, a fixture is required which means we need to update out `conftest.py` file with the below:
+
+```bash
+@pytest.fixture
+def config(scope='session'):
+
+    # read the find_element
+    with open('config.json') as config_file:
+        config = json.load(config_file)
+
+    # Assert value are acceptable
+    assert config['browser'] in ['Firefox', 'Chrom', 'Headless Chrome']
+    assert isinstance(config['implicit_wait'], int)
+    assert config['implicit_wait'] > 0
+
+    #Return config so it can be used
+    return config
+```
+
+By default this will run in `Headless Chrome` due to the configuration in the `config.json` configuration file.  

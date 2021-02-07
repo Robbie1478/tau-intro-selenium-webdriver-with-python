@@ -1,6 +1,7 @@
 """
 These tests cover DuckDuckGo searches.
 """
+
 from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
 
@@ -25,6 +26,3 @@ def test_basic_duckduckgo_search(browser):
   # And the search result links pertain to "panda"
   for title in result_page.result_link_titles():
     assert PHRASE.lower() in title.lower()
-
-  # TODO Remove this once the test is comlpete
-  raise Exception("Incomplete Test")
