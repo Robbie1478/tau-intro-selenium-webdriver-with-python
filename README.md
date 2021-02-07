@@ -66,7 +66,7 @@ def config(scope='session'):
 
 By default this will run in `Headless Chrome` due to the configuration in the `config.json` configuration file.  
 
-## Race Conditions
+## Chapter 8 - Race Conditions
 
 When running in Firefox, we encountered a failed test, the test tried to check the value of the new title before it had changed - this is known as a `race condition`
 
@@ -76,7 +76,7 @@ When running in Firefox, we encountered a failed test, the test tried to check t
   assert PHRASE in result_page.title()
 ```
 
-## Running Tests In Paralell
+## Chapter 9 - Running Tests In Paralell
 
 First we added more tests to demonstrate how slow it can be waiting for individual tests to run.
 To do this we need to add a decorator function
