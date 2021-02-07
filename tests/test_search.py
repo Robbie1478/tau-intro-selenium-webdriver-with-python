@@ -1,8 +1,8 @@
 """
 These tests cover DuckDuckGo searches.
 """
-import pytest h 
-cls
+import pytest 
+
 from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
 
