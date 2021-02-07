@@ -75,3 +75,27 @@ When running in Firefox, we encountered a failed test, the test tried to check t
   # (In this instance - putting this assertion last guarantees that the page title will be ready)
   assert PHRASE in result_page.title()
 ```
+
+## Running Tests In Paralell
+
+First we added more tests to demonstrate how slow it can be waiting for individual tests to run.
+To do this we need to add a decorator function
+
+```bash
+@pytest.mark.parametrize('phrase', ['panda', 'python', 'polar bear'])
+```
+
+We also need to have `pytest-xdist` installed which can be installed using the command `pipenv install pytest-xdist` in the terminal.
+
+### Commands For Paralell Tests
+
+- `python -m pytest -n 3`
+
+The "-n 3" arguments tells pytest to run 3 tests in parallel. We have 3 example tests, and most machines can handle 3 Web UI tests simultaneously. When the tests run, notice how 3 browser instances open at once - one per test.
+
+#### Run Time
+
+Headless Mode
+
+- Without Parallelisation - `approx 22 seconds`
+- With Parallelisation - `approx 8.5 seconds`
