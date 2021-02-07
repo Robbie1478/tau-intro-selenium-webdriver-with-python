@@ -66,7 +66,7 @@ def config(scope='session'):
 
 By default this will run in `Headless Chrome` due to the configuration in the `config.json` configuration file.  
 
-## Race Conditions
+## Chapter 8 - Race Conditions
 
 When running in Firefox, we encountered a failed test, the test tried to check the value of the new title before it had changed - this is known as a `race condition`
 
